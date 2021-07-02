@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Navigation from './Navigation';
+import Navigation from './Navigation'
 
 function Sidebar() {
     return (
@@ -13,6 +13,8 @@ function Sidebar() {
 const SidebarStyled = styled.div`
     width: 16.3rem;
     height: 100vh;
+    position: fixed;
+    overflow: hidden;
     background-color: var(--sidebar-dark-color);
 `
 

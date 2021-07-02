@@ -15,8 +15,8 @@ const GlobalStyle = createGlobalStyle`
     }
 
     *{
-        padding: 0;
         margin: 0;
+        padding: 0;
         box-sizing: border-box;
         list-style: none;
         text-decoration: none;
@@ -33,6 +33,18 @@ const GlobalStyle = createGlobalStyle`
         font-family: inherit;
         color: inherit;
         font-size: inherit;
+    }
+
+    h1 {
+        font-size: 4rem;
+        color: var(--white-color);
+        span {
+            font-size: 4rem;
+        }
+    }
+
+    span {
+        color: var(--primary-color);
     }
 
 `

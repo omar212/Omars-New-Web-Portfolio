@@ -12,7 +12,7 @@ function Navigation() {
             
             <ul className="nav-items">
                 <ol className="nav-items">
-                    <NavLink to="/home" activeClassName="active-class">
+                    <NavLink to="/home" activeClassName="active-class" exact>
                         Home
                     </NavLink>
                 </ol>
@@ -79,9 +79,9 @@ const NavigationStyled = styled.nav `
             display: block;
             a {
                 display: block;
-                padding: .5rem 0;
+                padding: .45rem 0;
                 position: relative;
-                z-index: 10;
+
                 &:hover {
                     cursor: pointer;
                 }
@@ -94,7 +94,7 @@ const NavigationStyled = styled.nav `
                     height: 50%;
                     background-color: var(--primary-color);
                     transition: All 0.4s cubic-bezier(.8,-0.2,.1,.77);
-                    z-index: 3;
+                    
                     opacity: .21;
                     transform-origin: right;
                 }
