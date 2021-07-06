@@ -2,9 +2,16 @@ import styled from 'styled-components';
 import React from 'react';
 import Sidebar from './Components/Sidebar';
 import HomePage from './Pages/HomePage';
+import AboutPage from './Pages/AboutPage';
+import ResumePage from './Pages/ResumePage';
+import PortfolioPage from './Pages/PortfolioPage';
+import BlogsPage from './Pages/BlogsPage';
+import ContactPage from './Pages/ContactPage';
+
 
 import { Route, Switch as Switching } from "react-router";
 import Switch from '@material-ui/core/Switch'
+
 
 
 function App() {
@@ -19,23 +26,23 @@ function App() {
           <div className="line-4"></div>
         </div>
         <Switching>
-            <Route path="/home" exact>
+            <Route path="/" exact>
               <HomePage />
             </Route>
             <Route path="/about" exact>
-            <HomePage />
+              <AboutPage />
               </Route>
             <Route path="/resume" exact>
-              <HomePage />
+              <ResumePage />
             </Route>
             <Route path="/portfolios" exact>
-              <HomePage />
+              <PortfolioPage />
             </Route>
             <Route path="/blogs" exact>
-              <HomePage />
+              <BlogsPage />
             </Route>
             <Route path="/contact" exact>
-              <HomePage />
+              <ContactPage />
             </Route>
           </Switching>
       </MainContentStyled>

@@ -12,7 +12,7 @@ function Navigation() {
             
             <ul className="nav-items">
                 <ol className="nav-items">
-                    <NavLink to="/home" activeClassName="active-class" exact>
+                    <NavLink to="/" activeClassName="active-class" exact>
                         Home
                     </NavLink>
                 </ol>
@@ -81,6 +81,8 @@ const NavigationStyled = styled.nav `
                 display: block;
                 padding: .45rem 0;
                 position: relative;
+                font-weight: 600;
+                letter-spacing: 1px;
 
                 &:hover {
                     cursor: pointer;

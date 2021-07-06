@@ -10,8 +10,8 @@ import LinkedIn from '@material-ui/icons/LinkedIn';
 function HomePage() {
     return (
         <HomePageStyled> 
-            <div className="p-particles-js">
-               <Particle /> 
+            <div className="particle-con">
+                <Particle /> 
             </div>
             <div className="typography">
                 <h1>Hi I'm <span>Omar Elnagdy</span></h1>
@@ -23,19 +23,19 @@ function HomePage() {
                     sem dolor ullamcorper lacus, vel tristique felis nunc in risus.
                 </p>
                 <div className="icons">
-                    <div className="icon i-facebook">
-                        <FacebookIcon />
-                    </div>
-                    <div className="icon i-github">
-                        <GithubIcon />
-                    </div>
-                        
-                    <div className="icon i-twitter">
-                        <TwitterIcon />
-                    </div>
-                    <div className="icon i-linkedin">
+                    <a href="https://www.facebook.com/omar.elnagdy" target="_blank" alt="facebook" rel="noopener noreferrer" className="icon i-facebook">
+                            <FacebookIcon />
+                    </a>
+                    <a  href="https://github.com/omar212" target="_blank"  alt="github" rel="noopener noreferrer" className="icon i-github">
+                            <GithubIcon />
+                    </a>
+            
+                    <a href="https://twitter.com/x_Omar_x1" target="_blank" alt="twitter" rel="noopener noreferrer" className="icon i-twitter">
+                         <TwitterIcon />
+                    </a>
+                    <a href="https://www.linkedin.com/in/omar-elnagdy/" target="_blank"  alt="linkedin" rel="noopener noreferrer" className="icon i-linkedin">
                         <LinkedIn />
-                    </div>
+                    </a>
 
                     
                 </div>
@@ -74,9 +74,20 @@ const HomePageStyled = styled.header`
             align-items: center;
             justify-content: center;
             border-radius: 50%;
-            
+            transition: all .4s ease-in-out;
+
+
+            &:hover {
+                border: 2px solid var(--primary-color);
+                color: var(--primary-color);
+            }
+             
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
             svg {
                 margin: 1rem;
+                cursor: pointer;
             }
         }
     }
