@@ -3,6 +3,7 @@ import { MainLayout } from '../styles/Layouts';
 
 function ResumePage() {
     return (
+        
         <div>
             resume
         </div>
