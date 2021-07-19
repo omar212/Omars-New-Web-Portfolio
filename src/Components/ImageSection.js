@@ -14,10 +14,11 @@ function ImageSection() {
                     <h4>I am <span>Omar Elnagdy</span></h4>
                 </div>
                 <p className="paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                    And I love what I do. Life is simple, when work and hobbies become the same thing. I am 
+                    grateful for the decisions I made in my life, to make that dream a reality. In my life time, I have tried 
+                    multiple possible careers such as teaching and mechanical engineering, but neither of those gave me that satisfaction feeling 
+                    that computer science has given me. Computer science to me is like a tree that doesn't stop growing and I want to be a branch 
+                    on that tree.
                 </p>
                 <div className="about-info">
                    <div className="info-title">
@@ -49,6 +50,7 @@ function ImageSection() {
 const ImageSectionStyled = styled.div`
     display: flex;
     margin-top: 5rem;
+    height: 100%;
     .left-content{
         width: 100%;
         /* height: 70vh; */
@@ -60,6 +62,7 @@ const ImageSectionStyled = styled.div`
     }
     .right-content {
         padding-right: 5rem;
+        height: 100%;
         
         h4 {
             font-size: 2rem;
@@ -71,6 +74,7 @@ const ImageSectionStyled = styled.div`
         }
         .about-info{
             display: flex;
+            height: 35vh;
 
         
             .info-title {
@@ -80,9 +84,9 @@ const ImageSectionStyled = styled.div`
                 }
             }
             .info-title, .info {
-
+                font-size: 18px;
                 p{
-                    padding: .3rem 0;
+                    padding: .7rem 0;
                 }
             }
         }

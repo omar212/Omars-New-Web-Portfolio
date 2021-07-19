@@ -53,14 +53,14 @@ function App() {
 const MainContentStyled = styled.main`
   position: relative;
   margin-left: 16.3rem;
-  min-height: 100vh;
+  min-height: 100%;
   @media screen and (max-width:1200px){
     margin-left: 0;
   }
 
     .lines {
       position: absolute;
-      min-height: 100vh;
+      min-height: 100%;
       width: 100%;
       display: flex;
       justify-content: space-evenly;
@@ -68,7 +68,7 @@ const MainContentStyled = styled.main`
 
       .line-1, .line-2, .line-3, .line-4 {
         width: 1px;
-        min-height: 100vh;
+        min-height: 100%;
         background-color:var(--border-color);
       }
     }
