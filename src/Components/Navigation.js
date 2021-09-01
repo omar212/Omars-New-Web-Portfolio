@@ -27,12 +27,12 @@ function Navigation() {
                     </NavLink>
                 </ol>
                 <ol className="nav-items">
-                    <NavLink to="/portfolios" activeClassName="active-class">
+                    <NavLink to="/blogs" activeClassName="active-class">
                         Blogs
                     </NavLink>
                 </ol>
                 <ol className="nav-items">
-                    <NavLink to="/blogs" activeClassName="active-class">
+                    <NavLink to="/contact" activeClassName="active-class">
                         Contact
                     </NavLink>
                 </ol>

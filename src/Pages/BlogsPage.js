@@ -14,13 +14,15 @@ function BlogsPage() {
                     blogs.map((blog) => {
                         return (
                         <div key={blog.id} >
-                            <div className="image">
-                                <img src={blog.image} alt=""/>
-                            </div>
-                            <div className="title">
-                                <h4>
-                                    {blog.title}
-                                </h4>
+                            <div className="blog-item">
+                                <div className="image">
+                                    <img src={blog.image} alt=""/>
+                                </div>
+                                <div className="title">
+                                    <a target="_blank" href={blog.link}>
+                                        {blog.title}
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         )
@@ -35,16 +37,45 @@ function BlogsPage() {
 const BlogsStyled = styled.div `
     .blog {
         display: grid;
-        grid-template-columns: repeat(2,1f);
+        grid-template-columns:  100% 100%;
         grid-column-gap: 2rem;
-        grid-row-start: 3rem;
-        .image {
+        grid-row-gap: 3rem;
+        padding: 2rem 1rem;
+        width: 40%;
+        // border: 1px solid white;
+        // background-color: var(--background-dark-grey);
+
+        .blog-item {
+            background-color: var(--background-dark-grey);
+            padding: 1rem 1rem;
             width: 100%;
-            height: 85%;
+            
+            overflow: hidden;
+        }
+
+        .image {
+            height: 100%;
             img {
                 width: 100%;
                 height: 65%;
-                object-fit: cover;
+                // object-fit: cover;
+                transition: all .4s ease-in-out;
+                &:hover {
+                    cursor: pointer;
+                    transform: rotate(5deg) scale(1.1)
+                }
+            }
+        }
+
+        .title {
+            a {
+                font-size: 1.5rem;
+                color: var(--white-color);
+                cursor: pointer;
+                transition: all .4s ease-in-out;
+                &:hover {
+                    color: var(--primary-color)
+                }
             }
         }
         

@@ -10,28 +10,32 @@ const blogs  = [
         title: 'HOW TO',
         date: '01',
         month: 'April',
-        image: blog1
+        image: blog1,
+        link: 'https://google.com'
     },
     {
         id: 2,
         title: 'HOW TO',
         date: '01',
         month: 'April',
-        image: blog2
+        image: blog2,
+        link: 'https://google.com'
     },
     {
         id: 3,
         title: 'HOW TO',
         date: '01',
         month: 'April',
-        image: blog3
+        image: blog3,
+        link: 'https://google.com'
     },
     {
         id: 4,
         title: 'HOW TO',
         date: '01',
         month: 'April',
-        image: blog4
+        image: blog4,
+        link: 'https://google.com'
     }
 
 ]
