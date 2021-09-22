@@ -3,8 +3,17 @@ import { MainLayout,InnerLayout  } from '../styles/Layouts';
 import Title from '../Components/Title'
 import styled from 'styled-components'
 import PrimaryButton from  '../Components/PrimaryButton'
+import EmailIcon from '@material-ui/icons/Email'
+import PhoneIcon from '@material-ui/icons/Phone'
+import LocationIcon from '@material-ui/icons/LocationOn'
+import ContactItem from '../Components/ContactItem'
+import { Phone } from '@material-ui/icons';
 
 function ContactPage() {
+    const phone = <PhoneIcon />
+    const email = <EmailIcon />
+    const location = <LocationIcon />
+
     return (
         <MainLayout>
             <Title title={'Contact'} span={'Contact'}/>
@@ -40,7 +49,9 @@ function ContactPage() {
                     </div>
                     
                     <div className="right-content">
-
+                        <ContactItem title={'Phone'} icon={phone} cont1={'+1(347)-429-2283'} const2={''} />
+                        <ContactItem title={'Email'} icon={email} cont1={'omarelnagdy16@gmail.com'} const={''} />
+                        <ContactItem title={'Location'} icon={location} cont1={'New York, NY'} cont2={'Danbury, CT'} />
                     </div>
 
                 </InnerLayout>
@@ -53,6 +64,7 @@ const ContactPageStyled = styled.section`
     .contact-section {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
         color: var(--white-color);
         .left-content {
             .contact-title {
@@ -96,13 +108,16 @@ const ContactPageStyled = styled.section`
                         background-color: transparent;
                         outline: none;
                         color: inherit;
+                        width: 100%;
                         padding: .8rem 1rem;
                     }
                 }
             }
         }
         .right-content {
-            
+            display: flex;
+            // justify-content: space-between;
+            flex-direction: column;
         }
         
     }

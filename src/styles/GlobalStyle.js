@@ -32,6 +32,12 @@ const GlobalStyle = createGlobalStyle`
         color: var(--font-light-color);
     }
 
+    h6 {
+            color: var(--white-color);
+            font-size: 1.2rem;
+            padding-bottom: .6rem;
+    }
+
     a {
         font-family: inherit;
         color: inherit;
