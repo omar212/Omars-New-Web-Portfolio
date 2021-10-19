@@ -1,6 +1,6 @@
 {
-  "homepage": "htttp://omar212.github.io/Omars-New-Web-Portfolio",
-  "name": "Omar Web Portfolio",
+  "homepage": "omar212.github.io",
+  "name": "Omar",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,8 +23,7 @@
   },
   "scripts": {
     "copy": "cp ./CNAME ./build/CNAME",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "npm run build && gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
