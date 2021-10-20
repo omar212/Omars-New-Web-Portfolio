@@ -8,7 +8,7 @@ function BlogsPage() {
     return (
         <MainLayout>
             <BlogsStyled>
-                <Title title={'Blogs'} span={'Blogs'} />
+                <Title title={'Projects'} span={'Projects'} />
                 <InnerLayout  className='blog'>
                 {
                     blogs.map((blog) => {
@@ -23,6 +23,11 @@ function BlogsPage() {
                                         {blog.title}
                                     </a>
                                 </div>
+                                {/* <div className="link">
+                                    <a target="_blank" href={blog.link}>
+                                        {blog.link}
+                                    </a>
+                                </div> */}
                             </div>
                         </div>
                         )

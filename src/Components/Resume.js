@@ -66,12 +66,6 @@ function Resume() {
                             subTitle={'Software Engineer'}
                             text={fullTimeDesc}
                         />
-                         <ResumeItem 
-                            year={'2015 - 2019'}
-                            title={'Bachelors in Computer Science and Minor in Mathematics'}
-                            subTitle={'City College of New York'}
-                            text={''}
-                        />
                     </div>
                 </InnerLayout>
             </ResumeStyled>
@@ -80,8 +74,14 @@ function Resume() {
 }
 
 const ResumeStyled = styled.div`
+    padding: none;
     .small-title {
         padding-bottom: 1rem;
+    }
+
+    .resume-content {
+        // border: 1px solid white;
+        margin-bottom: 5%;
     }
 `
 export default Resume

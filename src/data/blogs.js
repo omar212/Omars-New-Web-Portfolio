@@ -1,41 +1,50 @@
+import drizzyBird from '../images/blogs/DrizzyBird.gif';
+import herQuest from '../images/blogs/herQuest.png';
+import iAm from '../images/blogs/iAm.png';
+import spaceInvaders from '../images/blogs/blog2.jpg';
 import blog1 from '../images/blogs/blog1.jpg';
-import blog2 from '../images/blogs/blog2.jpg';
-import blog3 from '../images/blogs/blog1.jpg';
-import blog4 from '../images/blogs/blog2.jpg';
 
 
 const blogs  = [
     {
         id: 1,
-        title: 'HOW TO',
+        title: 'M & C Studios',
         date: '01',
         month: 'April',
         image: blog1,
-        link: 'https://google.com'
+        link: 'https://offical-movie-website.web.app/'
     },
     {
         id: 2,
-        title: 'HOW TO',
+        title: 'HerQuest',
         date: '01',
         month: 'April',
-        image: blog2,
-        link: 'https://google.com'
+        image: herQuest,
+        link: 'https://omar212.github.io/HerQuest/'
     },
     {
         id: 3,
-        title: 'HOW TO',
+        title: 'iAm App',
         date: '01',
         month: 'April',
-        image: blog3,
-        link: 'https://google.com'
+        image: iAm,
+        link: 'https://iamwomen-f2f09.firebaseapp.com'
     },
     {
         id: 4,
-        title: 'HOW TO',
+        title: 'Space Invaders',
         date: '01',
         month: 'April',
-        image: blog4,
-        link: 'https://google.com'
+        image: spaceInvaders,
+        link: 'https://github.com/omar212/Space-Invaders'
+    },
+    {
+        id: 5,
+        title: 'Drizzy Bird',
+        date: '01',
+        month: 'April',
+        image: drizzyBird,
+        link: 'https://github.com/omar212/Drizzy-Bird'
     }
 
 ]

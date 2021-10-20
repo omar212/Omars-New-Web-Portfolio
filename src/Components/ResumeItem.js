@@ -20,7 +20,7 @@ function ResumeItem({year, title, subTitle, text }) {
 const ResumeItemStyled = styled.div`
     display: flex;
     width: 100%;
-    border: 1px solid purple;
+    // border: 1px solid purple;
     
     &:not(:last-child) {
         padding-bottom: 3rem;
@@ -30,7 +30,7 @@ const ResumeItemStyled = styled.div`
         word-break: none;
         padding-left: 40px;
         position: relative;
-        border: 1px solid green;
+        // border: 1px solid green;
         &::before {
             content: "";
             position: absolute;
@@ -45,14 +45,15 @@ const ResumeItemStyled = styled.div`
         p {
             display: inline-block; 
             width: max-content;
-            border:1px solid red;
+            font-weight: 900;
+            // border:1px solid red;
         }
 
     }
     .right-content {
         margin-left:6rem;
         position: relative;
-        border: 1px solid green;
+        // border: 1px solid green;
         &::before {
             content: "";
             position: absolute;
@@ -75,7 +76,8 @@ const ResumeItemStyled = styled.div`
             display: inline-block; 
             word-break: break-word;
             width: 50%;
-            border:1px solid red;
+            font-weight: 900;
+            // border:1px solid red;
         }
     }
 `
