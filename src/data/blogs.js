@@ -12,7 +12,7 @@ const blogs  = [
         date: '01',
         month: 'April',
         image: blog1,
-        link: 'https://offical-movie-website.web.app/'
+        link: 'https://omar212.github.io/M-C-Studios-2018-/'
     },
     {
         id: 2,
