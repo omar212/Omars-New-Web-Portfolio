@@ -28,7 +28,7 @@ function Navigation() {
                 </ol>
                 <ol className="nav-items">
                     <NavLink to="/blogs" activeClassName="active-class">
-                        Blogs
+                        Projects
                     </NavLink>
                 </ol>
                 <ol className="nav-items">
