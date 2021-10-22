@@ -51,7 +51,7 @@ const BlogsStyled = styled.div `
         // background-color: var(--background-dark-grey);
 
         .blog-item {
-            background-color: var(--background-dark-grey);
+            background-color: var(--background-dark-color-gray);
             padding: 1rem 1rem;
             width: 100%;
             
@@ -73,6 +73,8 @@ const BlogsStyled = styled.div `
         }
 
         .title {
+            margin-top: 10px;
+            text-align: center;
             a {
                 font-size: 1.5rem;
                 color: var(--white-color);

@@ -46,9 +46,8 @@ function Skills() {
                             width={'80%'}
                             text={'80%'}
                         />
-
-
                     </div>
+                    
                 </InnerLayout>
             </MainLayout>
         </SkillsStyled>

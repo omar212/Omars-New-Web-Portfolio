@@ -21,6 +21,7 @@ const ServiceCardStyled = styled.div `
     border-right: 1px solid var(--border-color);
     border-top: 8px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
+    max-width:100%;
 
     &:hover {
         border-top: 8px solid var(--primary-color);
@@ -46,6 +47,8 @@ const ServiceCardStyled = styled.div `
 
           p {
               padding: .5rem 0;
+              color: var(--white-color);
+              font-weight:800;
           }
       }
     /* img {

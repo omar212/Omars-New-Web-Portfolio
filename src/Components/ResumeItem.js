@@ -20,7 +20,7 @@ function ResumeItem({year, title, subTitle, text }) {
 const ResumeItemStyled = styled.div`
     display: flex;
     width: 100%;
-    // border: 1px solid purple;
+    border-left: 1px solid white;
     
     &:not(:last-child) {
         padding-bottom: 3rem;
@@ -34,13 +34,14 @@ const ResumeItemStyled = styled.div`
         &::before {
             content: "";
             position: absolute;
-            left: 0;
+            left: -12px;
             top: 5px;
             width: 1rem;
             height: 17px;
             border-radius: 50%;
             border: 2px solid var(--border-color);
-            background-color: var(--background-color-dark)
+            background-color: var(--background-dark-color);
+
         }
         p {
             display: inline-block; 
@@ -75,7 +76,7 @@ const ResumeItemStyled = styled.div`
         p {
             display: inline-block; 
             word-break: break-word;
-            width: 50%;
+            width: 100%;
             font-weight: 900;
             // border:1px solid red;
         }

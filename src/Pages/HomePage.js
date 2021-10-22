@@ -14,13 +14,9 @@ function HomePage() {
                 <Particle /> 
             </div>
             <div className="typography">
-                <h1>Hi I'm <span>Omar Elnagdy</span></h1>
+                <h1>Hi I'm <span>Omar Elnagdy !</span></h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec gravida tincidunt euismod. Mauris lacus mi, vulputate eget sem
-                    vitae, imperdiet consectetur urna. In ante sapien, mattis eu nisi ut,
-                    malesuada fringilla massa. Ut pulvinar, quam quis interdum convallis,
-                    sem dolor ullamcorper lacus, vel tristique felis nunc in risus.
+                    Glad to see you have made it here!, I hope this website can help protray myself in the best way possible. Enjoy & Explore !
                 </p>
                 <div className="icons">
                     <a href="https://www.facebook.com/omar.elnagdy" target="_blank" alt="facebook" rel="noopener noreferrer" className="icon i-facebook">
@@ -49,6 +45,9 @@ const HomePageStyled = styled.header`
    height: 100vh;
    position: relative;
 
+   h1 {
+       color: var(--white-color)
+   }
    .p-particles-ks {
        position:  absolute;
        top: 0;
@@ -62,6 +61,10 @@ const HomePageStyled = styled.header`
        transform: translate(-50%, -50%);
        text-align: center;
        width: 80%;
+   }
+
+   p {
+       font-weight: 900;
    }
 
    .icons {

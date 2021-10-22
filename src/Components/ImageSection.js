@@ -41,7 +41,7 @@ function ImageSection() {
                     </div> 
                     
                 </div>
-                <PrimaryButton title={'Download CV'}/>
+                <PrimaryButton className="download-btn" title={'Download CV'}/>
              </div>
         </ImageSectionStyled>
     )
@@ -92,6 +92,11 @@ const ImageSectionStyled = styled.div`
         }
         .paragraph {
             padding: 1rem 0;
+            color: var(--white-color);
+            font-weight: 800;
+        }
+        .hckQw {
+            margin-top: 10%;
         }
     }
 `
