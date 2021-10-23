@@ -7,7 +7,7 @@ import blogs from '../data/blogs'
 function BlogsPage() {
     return (
         <MainLayout>
-            <BlogsStyled>
+            <ProjectStyled>
                 <Title title={'Projects'} span={'Projects'} />
                 <InnerLayout  className='blog'>
                 {
@@ -23,30 +23,26 @@ function BlogsPage() {
                                         {blog.title}
                                     </a>
                                 </div>
-                                {/* <div className="link">
-                                    <a target="_blank" href={blog.link}>
-                                        {blog.link}
-                                    </a>
-                                </div> */}
                             </div>
                         </div>
                         )
                     })
                 }
                 </InnerLayout>
-            </BlogsStyled>
+            </ProjectStyled>
         </MainLayout>
     )
 }
 
-const BlogsStyled = styled.div `
+const ProjectStyled = styled.div `
     .blog {
         display: grid;
         grid-template-columns:  100% 100%;
         grid-column-gap: 2rem;
         grid-row-gap: 3rem;
         padding: 2rem 1rem;
-        width: 40%;
+        width: 50%;
+
         // border: 1px solid white;
         // background-color: var(--background-dark-grey);
 
@@ -54,15 +50,18 @@ const BlogsStyled = styled.div `
             background-color: var(--background-dark-color-gray);
             padding: 1rem 1rem;
             width: 100%;
+            height: 100%;
             
             overflow: hidden;
         }
 
         .image {
-            height: 100%;
+            width:100%;
+            height: 92%;
             img {
                 width: 100%;
                 height: 65%;
+                margin-bottom: -100px;
                 // object-fit: cover;
                 transition: all .4s ease-in-out;
                 &:hover {

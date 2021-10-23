@@ -3,7 +3,7 @@ import { MainLayout } from '../styles/Layouts';
 import styled from 'styled-components';
 import Title from '../Components/Title';
 import ImageSection from '../Components/ImageSection';
-import ServicesSection from '../Components/ServicesSection';
+import HobbySection from '../Components/HobbySection';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 
 function AboutPage() {
@@ -13,7 +13,7 @@ function AboutPage() {
                 <Title title={'About Me'} span={'About Me'} />
                 <ImageSection />
                 <ArrowDownwardIcon className="arrow-circle-down bounce" />
-                <ServicesSection />
+                <HobbySection />
             </AboutStyled>
         </MainLayout>
     )

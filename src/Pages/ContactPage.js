@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import { MainLayout,InnerLayout  } from '../styles/Layouts';
 import Title from '../Components/Title'
 import styled from 'styled-components'
@@ -8,11 +8,32 @@ import PhoneIcon from '@material-ui/icons/Phone'
 import LocationIcon from '@material-ui/icons/LocationOn'
 import ContactItem from '../Components/ContactItem'
 import { Phone } from '@material-ui/icons';
+import emailjs from 'emailjs-com';
+import{ init } from 'emailjs-com';
+import Button from '@material-ui/core/Button';
+
 
 function ContactPage() {
     const phone = <PhoneIcon />
     const email = <EmailIcon />
     const location = <LocationIcon />
+
+    const form = useRef();
+    const [success, checkSuccess] = useState(false)
+    
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_hpxlflq', 'template_n9iwg9e', form.current, init("user_QdsLIWqRzZR2BZEMyzhaR"))
+        .then((result) => {
+            console.log(result.text);
+            checkSuccess(true)
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+      
+      
 
     return (
         <MainLayout>
@@ -20,30 +41,30 @@ function ContactPage() {
             <ContactPageStyled>
                 <InnerLayout className={'contact-section'}>
                     <div className="left-content">
-                        <form action="" className="form">
+                        <form ref={form} onSubmit={sendEmail} action="" className="form">
                             <div className="contact-title">
                                 <h4>
                                     Get In Touch
                                 </h4>
                             </div>
                             <div className="form-field">
-                                <label htmlFor="name" id="name">Enter your name:* </label>
-                                <input type="text" id="name"/>
+                                <label htmlFor="name" id="name" >Enter your name:* </label>
+                                <input type="text" id="name" name="user_name"/>
                             </div>
                             <div className="form-field">
-                                <label htmlFor="email" id="email">Enter your email:* </label>
-                                <input type="text" id="email"/>
+                                <label htmlFor="email" id="email" >Enter your email:* </label>
+                                <input type="text" name="user_email" id="email"/>
                             </div>
                             <div className="form-field">
                                 <label htmlFor="subject" id="name">Enter your subject: </label>
                                 <input type="text" id="subject"/>
                             </div>
-                            <div className="form-field">
+                            <div className="form-field" >
                                 <label htmlFor="text-area">Enter your message*</label>
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                <textarea name="message" id="" cols="30" rows="10"></textarea>
                             </div>
                             <div className="form-field">
-                                <PrimaryButton title={'Send Email'}/>
+                                <Button className="primary-button" type="submit" value="Send" onClick={sendEmail}><span>Send Email</span></Button>
                             </div>
                         </form>
                     </div>
@@ -112,6 +133,36 @@ const ContactPageStyled = styled.section`
                         padding: .8rem 1rem;
                     }
                 }
+                .primary-button {
+                    background-color: var(--primary-color);
+                    padding: .8rem 2.5rem;
+                    color: var(--white-color) !important;
+                    cursor: pointer;
+                    display: inline-block;
+                    font-size: inherit;
+                    text-transform: uppercase;
+                    position: relative;
+                    transition: all .4s ease-in-out;   
+                    margin-top: 2%;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 0;
+                        height: .2rem;
+                        transition: all .4s ease-in-out;
+                        left: 0;
+                        bottom: 0;
+                    }
+                    &:hover::after {
+                        width: 100%;
+                        background-color: white;
+                        opacity: .7;
+                    }
+                    span {
+                        color: var(--white-color) !important;
+                    }
+                }
+                
             }
         }
         .right-content {

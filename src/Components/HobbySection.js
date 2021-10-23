@@ -1,51 +1,54 @@
 import React from 'react';
 import { InnerLayout } from '../styles/Layouts';
 import styled from 'styled-components';
-import Title from '../Components/Title';
-import ServiceCard from './ServiceCard';
+import Title from './Title';
+import HobbyCard from './HobbyCard';
 import design from '../images/hobbyIcons/design.png';
 import gaming from '../images/hobbyIcons/gaming.png';
 import basketball from '../images/hobbyIcons/basketball.png';
+import piano from '../images/hobbyIcons/piano.png';
 
-function ServicesSection() {
+function HobbySection() {
     return (
         <InnerLayout>
-            <ServicesSectionStyled>
+            <HobbySectionStyled>
                  <Title title={'Hobbies'} span={'Hobbies'}  />
                  <div className="services">
-                    <ServiceCard 
+                    <HobbyCard 
                         image={design} 
                         title={'Web Design'} 
                         paragraph={"I truly enjoy the challenge and creativity it takes to create a website/app. I feel like I'm creating something very real and it truly gives me a satisfaction to complete it."}
                     />
-                    <div className="mid-card">
-                    <ServiceCard 
+                    <HobbyCard 
                         image={gaming} 
                         title={'Game Development'} 
                         paragraph={"I've always enjoyed creating and playing video games, in my opionion video games help you adept in stressful situations"}
                     />
-                    </div>
-                    <ServiceCard 
+                    <HobbyCard 
                         image={basketball} 
                         title={'Basketball'} 
                         paragraph={"For a healthy mind you need a healthy body, and basketball does that for me. Favourite Teams: Knicks & Nets"}
                     />
+                     <HobbyCard 
+                        image={piano} 
+                        title={'Piano'} 
+                        paragraph={"I've played piano since the age of 16 years old, I've always enjoyed the melody a piano can bring. You would be suprised how many songs are so easy to play through a piano."}
+                    />
                  </div>
-            </ServicesSectionStyled>
+            </HobbySectionStyled>
         </InnerLayout>
     )
 }
 
-const ServicesSectionStyled = styled.section`
+const HobbySectionStyled = styled.section`
     // background-color: var(--background-dark-color-gray);
     
     .services {
         display: flex;
         justify-content: space-between; 
         margin-top: 5rem;
-        .mid-card {
-            margin: 0 1.2rem;
-        }
+
+        
     }
 `;
-export default ServicesSection;
+export default HobbySection;

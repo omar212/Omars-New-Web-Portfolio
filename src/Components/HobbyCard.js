@@ -2,26 +2,27 @@ import React from 'react';
 import { InnerLayout } from '../styles/Layouts';
 import styled from 'styled-components';
 
-function ServiceCard({image, title, paragraph}) {
+function HobbyCard({image, title, paragraph}) {
     return (
-        <ServiceCardStyled>
+        <HobbyCardStyled>
             <div className="container">
                 <img src={image} alt=""/>
                 <h4>{title}</h4>
                 <p>{paragraph}</p>
             </div>
 
-        </ServiceCardStyled>
+        </HobbyCardStyled>
     )
 }
 
-const ServiceCardStyled = styled.div `
+const HobbyCardStyled = styled.div `
     background-color: var(--background-dark-color-gray);
     border-left: 1px solid var(--border-color);
     border-right: 1px solid var(--border-color);
     border-top: 8px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
-    max-width:100%;
+    margin:1%;
+    width:100%;
 
     &:hover {
         border-top: 8px solid var(--primary-color);
@@ -29,6 +30,7 @@ const ServiceCardStyled = styled.div `
     }
       .container {
           padding: 1.2rem;
+          /* max-width:100%; */
           h4 {
               color: var(--white-color);
               font-size: 1.6rem;
@@ -55,4 +57,4 @@ const ServiceCardStyled = styled.div `
         margin: 5px;
     } */
 `
-export default ServiceCard
+export default HobbyCard

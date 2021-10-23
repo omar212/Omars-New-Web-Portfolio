@@ -5,7 +5,7 @@ import HomePage from './Pages/HomePage';
 import AboutPage from './Pages/AboutPage';
 import ResumePage from './Pages/ResumePage';
 import PortfolioPage from './Pages/PortfolioPage';
-import BlogsPage from './Pages/BlogsPage';
+import ProjectsPage from './Pages/ProjectsPage';
 import ContactPage from './Pages/ContactPage';
 import Brightness6Icon from '@material-ui/icons/Brightness6';
 
@@ -86,9 +86,6 @@ function App() {
       <Sidebar/>
       <div className="theme">
         <div className="light-dark-mode">
-            {/* <div className="left-content">
-              <Brightness6Icon />
-            </div> */}
             <div className="right-content">
              <FormControlLabel
                 control={ <MaterialUISwitch 
@@ -99,7 +96,6 @@ function App() {
                             />}
                 size="medium"
               /> 
-
             </div>
           </div>
       </div>
@@ -127,7 +123,7 @@ function App() {
               <PortfolioPage />
             </Route>
             <Route path="/blogs" exact>
-              <BlogsPage />
+              <ProjectsPage />
             </Route>
             <Route path="/contact" exact>
               <ContactPage />
@@ -143,9 +139,22 @@ const MainContentStyled = styled.main`
   margin-left: 16.3rem;
   min-height: 100%;
 
-  @media screen and (max-width:1200px){
+  @media screen and (max-width:1200px) {
     margin-left: 0;
   }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    width: 100%;
+  }
+
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    width: 150%;
+}
+
 
     .lines {
       position: absolute;
