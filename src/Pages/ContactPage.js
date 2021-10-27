@@ -11,6 +11,8 @@ import { Phone } from '@material-ui/icons';
 import emailjs from 'emailjs-com';
 import{ init } from 'emailjs-com';
 import Button from '@material-ui/core/Button';
+import { Typography, Paper } from '@material-ui/core';
+import TextField from '@material-ui/core/TextField';
  
 
 function ContactPage() {
@@ -20,6 +22,9 @@ function ContactPage() {
 
     const form = useRef();
     const [success, checkSuccess] = useState(false)
+    const [name, setName] = useState('')
+    const [emailAddress, setEmailAddress] = useState('')
+    const [message, setMessage] = useState('')
     
     const sendEmail = (e) => {
         e.preventDefault();
@@ -28,7 +33,9 @@ function ContactPage() {
         .then((result) => {
             console.log(result.text);
             checkSuccess(true)
+            
         }, (error) => {
+            checkSuccess(false)
             console.log(error.text);
         });
     };
@@ -44,12 +51,12 @@ function ContactPage() {
                         <form ref={form} onSubmit={sendEmail} action="" className="form">
                             <div className="contact-title">
                                 <h4>
-                                    Get In Touch
+                                    Get In Touch, even if it's just to say hello!
                                 </h4>
                             </div>
                             <div className="form-field">
                                 <label htmlFor="name" id="name" >Enter your name:* </label>
-                                <input type="text" id="name" name="user_name"/>
+                                <input type="text" id="name" value={name} name="user_name" onChange={() => setName(name)}/>
                             </div>
                             <div className="form-field">
                                 <label htmlFor="email" id="email" >Enter your email:* </label>
@@ -58,6 +65,8 @@ function ContactPage() {
                             <div className="form-field">
                                 <label htmlFor="subject" id="name">Enter your subject: </label>
                                 <input type="text" id="subject"/>
+                                {/* <TextField  variant="filled" color="success" type="text" id="subject" focused /> */}
+
                             </div>
                             <div className="form-field" >
                                 <label htmlFor="text-area">Enter your message*</label>
@@ -67,6 +76,22 @@ function ContactPage() {
                                 <Button className="primary-button" type="submit" value="Send" onClick={sendEmail}><span>Send Email</span></Button>
                             </div>
                         </form>
+                        {
+                            success ? <div className="message success"> 
+                                            <Paper> 
+                                                <Typography> 
+                                                    Your message has been sent successfully
+                                                </Typography>
+                                            </Paper>
+                                        </div> :  ''
+                                        // <div className="message error"> 
+                                        //     <Paper> 
+                                        //         <Typography> 
+                                        //             Please try again
+                                        //         </Typography>
+                                        //     </Paper>
+                                        // </div>
+                        }
                     </div>
                     
                     <div className="right-content">
@@ -107,8 +132,8 @@ const ContactPageStyled = styled.section`
                     position: relative;
                     color: var(--white-color);
                     @media screen and (max-width: 1000px) {
-                            width: 80%;
-                        }
+                            width: 95%;
+                    }
 
                     label {
                         position: absolute;
@@ -181,6 +206,32 @@ const ContactPageStyled = styled.section`
                 }
                 
             }
+            .message {
+                .MuiPaper-elevation1 {
+                    margin: auto;
+                    margin-bottom: 10%;
+                    justify-content: center;
+                    width: 50%;
+                    font-family: inherit;
+                }
+                &.success {
+                    .MuiPaper-elevation1 {
+                        background-color: green;
+                    }
+                }
+                &.error {
+                    .MuiPaper-elevation1 {
+                        background-color: red;
+                    }
+                }
+                .MuiTypography-body1 {
+                    text-align: center;
+                    color: var(--white-color);
+
+                }
+            } 
+            
+           
         }
         .right-content {
             display: grid;

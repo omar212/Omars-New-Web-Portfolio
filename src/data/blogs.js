@@ -1,52 +1,50 @@
-import drizzyBird from '../images/blogs/DrizzyBird.gif';
-import herQuest from '../images/blogs/herQuest.png';
-import iAm from '../images/blogs/iAm.png';
-import spaceInvaders from '../images/blogs/blog2.jpg';
-import blog1 from '../images/blogs/blog1.jpg';
+import drizzyBird from '../images/projects/DrizzyBird.gif';
+import herQuest from '../images/projects/herQuest.png';
+import iAm from '../images/projects/iAm.png';
+import iAmWeb from '../images/projects/iAmWeb.png';
+import spaceInvaders from '../images/projects/spaceInvaders.gif';
+import movieNchill from '../images/projects/movieNchill.png';
+import menaApp from '../images/projects/menaApp.png';
+import menaWeb from '../images/projects/menaWeb.png';
 
 
 const blogs  = [
     {
         id: 1,
         title: 'M & C Studios',
-        date: '01',
-        month: 'April',
-        image: blog1,
+        image: movieNchill,
         link: 'https://omar212.github.io/M-C-Studios-2018-/'
     },
     {
         id: 2,
+        title: 'Mena Birthday App',
+        image: menaWeb,
+        link: 'https://omar212.github.io/Mena-21-App/'
+    },
+    {
+        id: 3,
         title: 'HerQuest',
-        date: '01',
-        month: 'April',
         image: herQuest,
         link: 'https://omar212.github.io/HerQuest/'
     },
     {
-        id: 3,
+        id: 4,
         title: 'iAm App',
-        date: '01',
-        month: 'April',
-        image: iAm,
+        image: iAmWeb,
         link: 'https://iamwomen-f2f09.firebaseapp.com'
     },
     {
-        id: 4,
+        id: 5,
         title: 'Space Invaders',
-        date: '01',
-        month: 'April',
         image: spaceInvaders,
         link: 'https://github.com/omar212/Space-Invaders'
     },
     {
-        id: 5,
+        id: 6,
         title: 'Drizzy Bird',
-        date: '01',
-        month: 'April',
         image: drizzyBird,
         link: 'https://github.com/omar212/Drizzy-Bird'
     }
-
 ]
 
 export default blogs;

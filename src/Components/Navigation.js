@@ -3,7 +3,7 @@ import  { NavLink } from 'react-router-dom';
 import avatar from '../images/avatar.jpg';
 import styled from 'styled-components';
 
-function Navigation() {
+function Navigation({setNavToggle, navToggle}) {
     return (
         <NavigationStyled>
             <div className="avatar">
@@ -12,27 +12,27 @@ function Navigation() {
             
             <ul className="nav-items">
                 <ol className="nav-items">
-                    <NavLink to="/" activeClassName="active-class" exact>
+                    <NavLink to="/" activeClassName="active-class" onClick={() => setNavToggle(!navToggle)} exact>
                         Home
                     </NavLink>
                 </ol>
                 <ol className="nav-items">
-                    <NavLink to="/about" activeClassName="active-class">
+                    <NavLink to="/about" activeClassName="active-class" onClick={() => setNavToggle(!navToggle)}>
                         About
                     </NavLink>
                 </ol>
                 <ol className="nav-items">
-                    <NavLink to="/resume" activeClassName="active-class">
+                    <NavLink to="/resume" activeClassName="active-class" onClick={() => setNavToggle(!navToggle)}>
                         Resume
                     </NavLink>
                 </ol>
                 <ol className="nav-items">
-                    <NavLink to="/blogs" activeClassName="active-class">
+                    <NavLink to="/blogs" activeClassName="active-class" onClick={() => setNavToggle(!navToggle)}>
                         Projects
                     </NavLink>
                 </ol>
                 <ol className="nav-items">
-                    <NavLink to="/contact" activeClassName="active-class">
+                    <NavLink to="/contact" activeClassName="active-class" onClick={() => setNavToggle(!navToggle)}>
                         Contact
                     </NavLink>
                 </ol>

@@ -8,6 +8,7 @@ import PortfolioPage from './Pages/PortfolioPage';
 import ProjectsPage from './Pages/ProjectsPage';
 import ContactPage from './Pages/ContactPage';
 import Brightness6Icon from '@material-ui/icons/Brightness6';
+import Button from '@material-ui/core/Button';
 
 import { styled as style } from '@material-ui/core/styles';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -87,10 +88,8 @@ function App() {
   }));
   return (
     <div className="App">
-      <Sidebar navToggle={navToggle}/>
-      
-      
-      
+      <Sidebar setNavToggle={setNavToggle} navToggle={navToggle}/>
+
       <MainContentStyled>
         <div className="lines">
           <div className="line-1"></div>
@@ -116,26 +115,9 @@ function App() {
               </div>
             </div>
         </div>
-      {/* <div className="theme">   
-          <div className="light-dark-mode">
-              <div className="right-content">
-              <FormControlLabel
-                  control={ <MaterialUISwitch 
-                              checked={checked} 
-                              onClick={themeToggler} 
-                              sx={{ m: 1 }} 
-                              inputProps={{ 'aria-label': 'controlled' }}
-                              />}
-                  size="medium"
-                /> 
-              </div>
-            </div>
-      </div> */}
-
-        
         <Switching>
-            <Route path="/" exact>
-              <HomePage />
+            <Route  path="/" exact>
+                <HomePage />
             </Route>
             <Route path="/about" exact>
               <AboutPage />

@@ -61,6 +61,7 @@ const HomePageStyled = styled.header`
        transform: translate(-50%, -50%);
        text-align: center;
        width: 80%;
+       color: var(--white-color);
    }
 
    p {
