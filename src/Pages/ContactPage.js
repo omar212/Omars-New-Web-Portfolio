@@ -11,7 +11,7 @@ import { Phone } from '@material-ui/icons';
 import emailjs from 'emailjs-com';
 import{ init } from 'emailjs-com';
 import Button from '@material-ui/core/Button';
-
+ 
 
 function ContactPage() {
     const phone = <PhoneIcon />
@@ -87,6 +87,9 @@ const ContactPageStyled = styled.section`
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 2rem;
         color: var(--white-color);
+        @media screen and (max-width: 1000px) {
+            grid-template-columns: repeat(1,1fr);
+        }
         .left-content {
             .contact-title {
                 h4 {
@@ -103,6 +106,9 @@ const ContactPageStyled = styled.section`
                     margin-top: 2rem;
                     position: relative;
                     color: var(--white-color);
+                    @media screen and (max-width: 1000px) {
+                            width: 80%;
+                        }
 
                     label {
                         position: absolute;
@@ -121,6 +127,7 @@ const ContactPageStyled = styled.section`
                         height:50px;
                         padding: 0 15px;
                         width: 100%;
+                      
                         color: inherit;
                     }
 
@@ -131,6 +138,15 @@ const ContactPageStyled = styled.section`
                         color: inherit;
                         width: 100%;
                         padding: .8rem 1rem;
+                    }
+
+                    Button {
+                        @media screen and (max-width: 1000px) {
+                            margin: auto;
+                            display: flex;
+                            justify-content: center;
+                            margin-bottom: 2rem;
+                        }
                     }
                 }
                 .primary-button {
@@ -144,6 +160,7 @@ const ContactPageStyled = styled.section`
                     position: relative;
                     transition: all .4s ease-in-out;   
                     margin-top: 2%;
+                    margin-bottom:5%;
                     &::after {
                         content: "";
                         position: absolute;
@@ -166,9 +183,15 @@ const ContactPageStyled = styled.section`
             }
         }
         .right-content {
-            display: flex;
+            display: grid;
+            width:75%;
+            height: 50%;
             // justify-content: space-between;
-            flex-direction: column;
+            @media screen and (max-width: 1000px) {
+                width: 90%;
+                grid-template-columns: repeat(1,1fr);
+            }
+           
         }
         
     }

@@ -23,6 +23,9 @@ const HobbyCardStyled = styled.div `
     border-bottom: 1px solid var(--border-color);
     margin:1%;
     width:100%;
+    @media screen and (max-width: 1000px) {
+            width:100%;
+    }
 
     &:hover {
         border-top: 8px solid var(--primary-color);

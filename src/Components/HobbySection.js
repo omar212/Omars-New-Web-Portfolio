@@ -44,11 +44,25 @@ const HobbySectionStyled = styled.section`
     // background-color: var(--background-dark-color-gray);
     
     .services {
-        display: flex;
-        justify-content: space-between; 
+        display: grid;
+        /* justify-content: space-between;  */
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
         margin-top: 5rem;
+        width: 100%;
 
-        
+        @media screen and (max-width: 1000px) {
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+        }
+        @media screen and (max-width: 950px) {
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+        }
+        @media screen and (max-width: 650px) {
+            grid-template-columns: repeat(1, 1fr);
+            width: 100%;
+        }
     }
 `;
 export default HobbySection;

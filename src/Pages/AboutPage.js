@@ -22,6 +22,9 @@ function AboutPage() {
 
 
 const AboutStyled = styled.section`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     svg {
         width: 10px;
     }

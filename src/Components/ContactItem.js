@@ -29,13 +29,21 @@ const ContactItemStyled = styled.div`
     background-color: var(--background-dark-color-gray);
     display: flex;
     align-items: center;
+    border-radius: 10rem;
+    width: 100%;
+    margin-right: 2rem;
+    @media screen and (max-width: 1000px) {
+                width: 90%;
+                padding: 1rem 1rem;
+                grid-template-columns: repeat(1,1fr);
+    }
     &:not(:last-child) {
         margin-bottom: 2rem;
     }
     
     .left-content {
         padding: 1.5rem;
-        border: 1px solid var(--border-color);
+
         display: flex;
         align-items: center;
         justify-content: center;
@@ -48,6 +56,7 @@ const ContactItemStyled = styled.div`
     }
 
     .right-content {
+        
         h6 {
             color: var(--white-color);
             font-size: 1.2rem;

@@ -41,8 +41,11 @@ function ImageSection() {
                     </div> 
                     
                 </div>
-                <PrimaryButton className="download-btn" title={'Download CV'}/>
+                <div className="btn-container">
+                    <PrimaryButton className="download-btn" title={'Download Resume'}/>
+                </div>
              </div>
+             
         </ImageSectionStyled>
     )
 }
@@ -51,6 +54,10 @@ const ImageSectionStyled = styled.div`
     display: flex;
     margin-top: 5rem;
     height: 100%;
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        text-align: center;
+    }
     .left-content{
         width: 100%;
         /* height: 70vh; */
@@ -61,10 +68,14 @@ const ImageSectionStyled = styled.div`
         }
     }
     .right-content {
-        padding-right: 5rem;
+        // padding-right: 5rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
         height: 100%;
         
         h4 {
+            margin-top: 2%;
             font-size: 2rem;
             color: var(--white-color);
             span{
@@ -75,8 +86,11 @@ const ImageSectionStyled = styled.div`
         .about-info{
             display: flex;
             height: 35vh;
-
-        
+            width: 100%;
+            @media screen and (max-width: 1000px) {
+                justify-content: center;
+            }
+    
             .info-title {
                 padding-right: 3rem;
                 p {
@@ -95,8 +109,12 @@ const ImageSectionStyled = styled.div`
             color: var(--white-color);
             font-weight: 800;
         }
-        .hckQw {
-            margin-top: 10%;
+        /* .hckQw {
+            margin-top: 20%;
+        } */
+
+        .btn-container {
+            margin-top: 25%;
         }
     }
 `

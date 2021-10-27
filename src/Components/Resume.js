@@ -75,6 +75,9 @@ function Resume() {
 
 const ResumeStyled = styled.div`
     padding: none;
+    @media screen and (max-width: 1000px) {
+        padding: 0;
+    }
     .small-title {
         padding-bottom: 1rem;
     }

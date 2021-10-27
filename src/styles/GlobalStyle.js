@@ -88,33 +88,84 @@ const GlobalStyle = createGlobalStyle`
         color: var(--primary-color);
     }
 
-    // floating toggler
-    .light-dark-mode  {
+    
+       
+    /* .light-dark-mode  {
         position: fixed;
-        right: 0;
-        top: 10%;
-        background-color: var(--background-light-color-2);
-        width: 6rem;
+        right: 0px;
+        top: 14.5%;
+        // background-color: var(--background-light-color-2);
+        width: 5%;
+        margin-top:2%;
+        margin-right:1%;
         height: 2.5rem;
         z-index: 15;
         display: flex;
         align-items: center;
-        justify-content: center;
-    svg {
-      display: flex;
-      align-items: center;
-      font-size: 1.7rem;
-      color: var(--white-color)
-    }
-    .MuiFormControlLabel-root {
-        margin-left:0 !important;
-        margin-right:0 !important;
-    }
-  }
+        justify-content: flex-end;
+        svg {
+            display: flex;
+            align-items: center;
+            font-size: 1.7rem;
+            color: var(--white-color)
+        }
+        .MuiFormControlLabel-root {
+            margin-left:0 !important;
+            margin-right:0 !important;
+        }
+    } */
 
-  .theme {
-      position: relative;
-  }
+    .theme {
+        position: relative;
+    }
+
+    // Nav Toggler
+    .ham-burger-menu {
+        position: absolute;
+        top: 0px;
+        // margin-left: 1rem;
+        width: 6.5rem;
+        height: 2.5rem;
+        // border: 1px solid white;
+        right: 0;
+        text-align: end;
+        z-index: 15;
+        svg {
+            font-size: 3rem;
+        }
+        .light-dark-mode  {
+        position: fixed;
+        right: 0px;
+        top: 14.5%;
+        // background-color: var(--background-light-color-2);
+        width: 15%;
+        margin-top:2%;
+        margin-right:1%;
+        height: 2.5rem;
+        z-index: 15;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        svg {
+            display: flex;
+            align-items: center;
+            font-size: 1.7rem;
+            color: var(--white-color)
+        }
+        .MuiFormControlLabel-root {
+            margin-left:0 !important;
+            margin-right:0 !important;
+        }
+    }
+    }
+
+    .nav-toggle {
+            transform: translateX(-100%);
+            z-index: 22;    
+            @media screen and (max-width: 1200px) {
+                transform: translateX(0%);
+            }
+    }
 
 `
 

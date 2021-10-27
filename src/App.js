@@ -15,10 +15,14 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import { Route, Switch as Switching } from "react-router";
 import Switch from '@material-ui/core/Switch'
 
+import MenuIcon from '@material-ui/icons/Menu';
+import IconButton from '@material-ui/core/IconButton'
+
 
 function App() {
   const [theme, setTheme] = useState('dark-theme')
   const [checked, setChecked] = useState(false);
+  const [navToggle, setNavToggle] = useState(false);
 
   useEffect(() => {
     document.documentElement.className = theme;
@@ -83,22 +87,9 @@ function App() {
   }));
   return (
     <div className="App">
-      <Sidebar/>
-      <div className="theme">
-        <div className="light-dark-mode">
-            <div className="right-content">
-             <FormControlLabel
-                control={ <MaterialUISwitch 
-                            checked={checked} 
-                            onClick={themeToggler} 
-                            sx={{ m: 1 }} 
-                            inputProps={{ 'aria-label': 'controlled' }}
-                            />}
-                size="medium"
-              /> 
-            </div>
-          </div>
-      </div>
+      <Sidebar navToggle={navToggle}/>
+      
+      
       
       <MainContentStyled>
         <div className="lines">
@@ -107,6 +98,39 @@ function App() {
           <div className="line-3"></div>
           <div className="line-4"></div>
         </div>
+        <div className="ham-burger-menu">
+            <IconButton aria-label="" onClick={() => setNavToggle(!navToggle)}>
+              <MenuIcon />
+            </IconButton>
+            <div className="light-dark-mode">
+              <div className="right-content">
+              <FormControlLabel
+                  control={ <MaterialUISwitch 
+                              checked={checked} 
+                              onClick={themeToggler} 
+                              sx={{ m: 1 }} 
+                              inputProps={{ 'aria-label': 'controlled' }}
+                              />}
+                  size="medium"
+                /> 
+              </div>
+            </div>
+        </div>
+      {/* <div className="theme">   
+          <div className="light-dark-mode">
+              <div className="right-content">
+              <FormControlLabel
+                  control={ <MaterialUISwitch 
+                              checked={checked} 
+                              onClick={themeToggler} 
+                              sx={{ m: 1 }} 
+                              inputProps={{ 'aria-label': 'controlled' }}
+                              />}
+                  size="medium"
+                /> 
+              </div>
+            </div>
+      </div> */}
 
         
         <Switching>
@@ -152,7 +176,7 @@ const MainContentStyled = styled.main`
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
-    width: 150%;
+    width: 100%;
 }
 
 

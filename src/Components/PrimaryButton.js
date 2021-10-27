@@ -1,17 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
+import omarResume from '../images/resume/omarResume2021.pdf'
+import { Link } from 'react-router-dom'
 
 function PrimaryButton({title}) {
     return (
         <PrimaryButtonStyled>
-            {title}
+            <Link to={omarResume} target="_blank" download>
+                {title}
+            </Link>
         </PrimaryButtonStyled>
     )
 }
 
-const PrimaryButtonStyled = styled.a`
+const PrimaryButtonStyled = styled.a` 
     background-color: var(--primary-color);
-    padding: .8rem 2.5rem;
+    padding: .8rem 1.5rem;
+    border-radius: 25rem;
     color: var(--white-color);
     cursor: pointer;
     display: inline-block;
@@ -29,10 +34,14 @@ const PrimaryButtonStyled = styled.a`
         left: 0;
         bottom: 0;
     }
-    &:hover::after {
+    a {
+        font-size: 30px;
+    }
+    /* &:hover::after {
         width: 100%;
         background-color: white;
         opacity: .7;
-    }
+        bord
+    } */
 `
 export default PrimaryButton
