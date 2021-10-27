@@ -66,7 +66,7 @@ const ResumeItemStyled = styled.div`
     .right-content {
         @media screen and (max-width: 768px) {
             margin-left:-6rem;
-            margin-right: 3rem;
+            // margin-right: 3rem;
             margin-bottom: 3rem;
             margin-top: 3rem;
         }
