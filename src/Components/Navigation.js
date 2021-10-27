@@ -61,8 +61,8 @@ const NavigationStyled = styled.nav `
         padding: 1rem 0;
         img {
             width: 100%;
-            border-radius: 50%;
-            border: 8px solid var(--border-color);
+            border-radius: 2rem;
+            border: 3px solid var(--border-color);
         }
     }
 
