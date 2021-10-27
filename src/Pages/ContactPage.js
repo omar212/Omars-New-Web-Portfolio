@@ -56,7 +56,7 @@ function ContactPage() {
                             </div>
                             <div className="form-field">
                                 <label htmlFor="name" id="name" >Enter your name:* </label>
-                                <input type="text" id="name" value={name} name="user_name" onChange={() => setName(name)}/>
+                                <input type="text" id="name" name="user_name" />
                             </div>
                             <div className="form-field">
                                 <label htmlFor="email" id="email" >Enter your email:* </label>
