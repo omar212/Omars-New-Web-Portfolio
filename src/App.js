@@ -19,11 +19,37 @@ import Switch from '@material-ui/core/Switch'
 import MenuIcon from '@material-ui/icons/Menu';
 import IconButton from '@material-ui/core/IconButton'
 
+function useWindowSize() {
+  // Initialize state with undefined width/height so server and client renders match
+  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+  useEffect(() => {
+    // Handler to call on window resize
+    function handleResize() {
+      // Set window width/height to state
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+    // Call handler right away so state gets updated with initial window size
+    handleResize();
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); // Empty array ensures that effect is only run on mount
+  return windowSize;
+}
 
 function App() {
   const [theme, setTheme] = useState('dark-theme')
   const [checked, setChecked] = useState(false);
   const [navToggle, setNavToggle] = useState(false);
+  const size = useWindowSize();
 
   useEffect(() => {
     document.documentElement.className = theme;
@@ -89,7 +115,7 @@ function App() {
   return (
     <div className="App">
       <Sidebar setNavToggle={setNavToggle} navToggle={navToggle}/>
-
+      
       <MainContentStyled>
         <div className="lines">
           <div className="line-1"></div>
@@ -98,9 +124,15 @@ function App() {
           <div className="line-4"></div>
         </div>
         <div className="ham-burger-menu">
-            <IconButton aria-label="" onClick={() => setNavToggle(!navToggle)}>
-              <MenuIcon />
-            </IconButton>
+            {
+              size.width < 1200 ? 
+                ( 
+                  <IconButton aria-label="" onClick={() => setNavToggle(!navToggle)}>
+                    <MenuIcon />
+                  </IconButton> 
+                ) : ( <div></div> )
+            }
+            
             <div className="light-dark-mode">
               <div className="right-content">
               <FormControlLabel
