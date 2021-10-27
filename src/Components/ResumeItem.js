@@ -5,7 +5,9 @@ function ResumeItem({year, title, subTitle, text }) {
     return (
         <ResumeItemStyled>
             <div className="left-content">
-                <p>{year}</p>
+                <span className="year-span">
+                    <p>{year}</p>
+                </span>
             </div>
             <div className="right-content">
                 <h5>{title}</h5>
@@ -30,6 +32,16 @@ const ResumeItemStyled = styled.div`
         word-break: none;
         padding-left: 40px;
         position: relative;
+        @media screen and (max-width: 1000px) {
+                padding-bottom: 5rem;
+        }
+
+        .year-span {
+            @media screen and (max-width: 1000px) {
+                padding-bottom: 5rem;
+            }
+        }
+        
         // border: 1px solid green;
         &::before {
             content: "";
@@ -52,6 +64,12 @@ const ResumeItemStyled = styled.div`
 
     }
     .right-content {
+        @media screen and (max-width: 768px) {
+            margin-left:-6rem;
+            margin-right: 3rem;
+            margin-bottom: 3rem;
+            margin-top: 3rem;
+        }
         margin-left:6rem;
         position: relative;
         // border: 1px solid green;
@@ -63,6 +81,10 @@ const ResumeItemStyled = styled.div`
             width: 3rem;
             height: 2px;
             background-color: var(--border-color);
+            @media screen and (max-width: 768px) {
+                left: -108px;
+                top: -44px;
+            }
         }
         h5 {
             color: var(--primary-color);

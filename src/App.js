@@ -19,7 +19,7 @@ import Switch from '@material-ui/core/Switch'
 import MenuIcon from '@material-ui/icons/Menu';
 import IconButton from '@material-ui/core/IconButton'
 
-function useWindowSize() {
+function useWindowSize(setNavToggle) {
   // Initialize state with undefined width/height so server and client renders match
   // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
   const [windowSize, setWindowSize] = useState({
@@ -49,7 +49,7 @@ function App() {
   const [theme, setTheme] = useState('dark-theme')
   const [checked, setChecked] = useState(false);
   const [navToggle, setNavToggle] = useState(false);
-  const size = useWindowSize();
+  const size = useWindowSize(setNavToggle);
 
   useEffect(() => {
     document.documentElement.className = theme;
@@ -124,14 +124,18 @@ function App() {
           <div className="line-4"></div>
         </div>
         <div className="ham-burger-menu">
-            {
+            {/* {
               size.width < 1200 ? 
                 ( 
                   <IconButton aria-label="" onClick={() => setNavToggle(!navToggle)}>
                     <MenuIcon />
                   </IconButton> 
                 ) : ( <div></div> )
-            }
+            } */}
+
+            <IconButton aria-label="" onClick={() => setNavToggle(!navToggle)}>
+                    <MenuIcon />
+                  </IconButton> 
             
             <div className="light-dark-mode">
               <div className="right-content">
