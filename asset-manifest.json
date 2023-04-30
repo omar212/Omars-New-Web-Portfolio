@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.d915cd2f.chunk.css",
-  "main.js": "/static/js/main.96f821fd.chunk.js",
-  "main.js.map": "/static/js/main.96f821fd.chunk.js.map",
+  "main.js": "/static/js/main.95ff76be.chunk.js",
+  "main.js.map": "/static/js/main.95ff76be.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.2e190fde.js",
   "runtime~main.js.map": "/static/js/runtime~main.2e190fde.js.map",
   "static/js/2.84257620.chunk.js": "/static/js/2.84257620.chunk.js",
@@ -9,10 +9,11 @@
   "static/js/3.38319778.chunk.js": "/static/js/3.38319778.chunk.js",
   "static/js/3.38319778.chunk.js.map": "/static/js/3.38319778.chunk.js.map",
   "index.html": "/index.html",
-  "precache-manifest.9b83c13e990256318bab83b92ccf2100.js": "/precache-manifest.9b83c13e990256318bab83b92ccf2100.js",
+  "precache-manifest.f3ee6534a0d7efd1bdb21bbab324a211.js": "/precache-manifest.f3ee6534a0d7efd1bdb21bbab324a211.js",
   "service-worker.js": "/service-worker.js",
   "static/css/main.d915cd2f.chunk.css.map": "/static/css/main.d915cd2f.chunk.css.map",
   "static/media/DrizzyBird.gif": "/static/media/DrizzyBird.309fa45c.gif",
+  "static/media/Omar_Elnagdy_Resume.pdf": "/static/media/Omar_Elnagdy_Resume.54cb9ce6.pdf",
   "static/media/ai.jpg": "/static/media/ai.14dbe5a4.jpg",
   "static/media/avatar.jpg": "/static/media/avatar.5323c606.jpg",
   "static/media/herQuest.png": "/static/media/herQuest.8fbe44a3.png",
@@ -21,6 +22,5 @@
   "static/media/menaApp.png": "/static/media/menaApp.9ffaa334.png",
   "static/media/menaWeb.png": "/static/media/menaWeb.db05dc26.png",
   "static/media/movieNchill.png": "/static/media/movieNchill.fd562dcf.png",
-  "static/media/resume.pdf": "/static/media/resume.54cb9ce6.pdf",
   "static/media/spaceInvaders.gif": "/static/media/spaceInvaders.61b710db.gif"
 }

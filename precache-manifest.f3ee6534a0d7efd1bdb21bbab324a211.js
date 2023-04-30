@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "c09367a12b85bcb22c4c",
+    "revision": "4ae76103ad01d385391c",
     "url": "/static/css/main.d915cd2f.chunk.css"
   },
   {
-    "revision": "c09367a12b85bcb22c4c",
-    "url": "/static/js/main.96f821fd.chunk.js"
+    "revision": "4ae76103ad01d385391c",
+    "url": "/static/js/main.95ff76be.chunk.js"
   },
   {
     "revision": "6b8889d54183c22a5286",
@@ -29,7 +29,7 @@ self.__precacheManifest = [
   },
   {
     "revision": "54cb9ce68e988608a6ff0676709b14ac",
-    "url": "/static/media/resume.54cb9ce6.pdf"
+    "url": "/static/media/Omar_Elnagdy_Resume.54cb9ce6.pdf"
   },
   {
     "revision": "309fa45c8dd14ce61d4b40f262912e0c",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/static/media/menaApp.9ffaa334.png"
   },
   {
-    "revision": "d6ec4d7fac4bd058bc149544ad4f86a4",
+    "revision": "faca0ccc7af721a7d0c3bfb0a9c6d9ca",
     "url": "/index.html"
   }
 ];
