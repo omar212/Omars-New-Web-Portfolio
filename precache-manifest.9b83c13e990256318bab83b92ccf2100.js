@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "371150bae5f417e8f8d7",
+    "revision": "c09367a12b85bcb22c4c",
     "url": "/static/css/main.d915cd2f.chunk.css"
   },
   {
-    "revision": "371150bae5f417e8f8d7",
-    "url": "/static/js/main.d96426af.chunk.js"
+    "revision": "c09367a12b85bcb22c4c",
+    "url": "/static/js/main.96f821fd.chunk.js"
   },
   {
     "revision": "6b8889d54183c22a5286",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/static/media/ai.14dbe5a4.jpg"
   },
   {
-    "revision": "a56c403494aeaf72d6eb0914db61dd9d",
-    "url": "/static/media/omarResume2021.a56c4034.pdf"
+    "revision": "54cb9ce68e988608a6ff0676709b14ac",
+    "url": "/static/media/resume.54cb9ce6.pdf"
   },
   {
     "revision": "309fa45c8dd14ce61d4b40f262912e0c",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/static/media/menaApp.9ffaa334.png"
   },
   {
-    "revision": "863a8b08b7c0e4f31f56b3cb590b6c66",
+    "revision": "d6ec4d7fac4bd058bc149544ad4f86a4",
     "url": "/index.html"
   }
 ];
