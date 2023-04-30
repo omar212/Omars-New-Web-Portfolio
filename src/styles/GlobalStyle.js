@@ -36,8 +36,8 @@ const GlobalStyle = createGlobalStyle`
     .dark-theme {
         --primary-color: #007BFF;
         --secondary-color: #6C757D;
-        --background-dark-color: #10121A;
-        --background-dark-color-gray: #191D2B;
+        --background-dark-color: #000000;
+        --background-dark-color-gray: #212124;
         --background-dark-grey: #191D2B;
         --border-color: #2E344E;
         --background-light-color: #F1F1F1;
@@ -45,7 +45,7 @@ const GlobalStyle = createGlobalStyle`
         --font-light-color: #a4acc4;
         --font-dark-color: #313131;
         --font-dark-color-2: #151515;
-        --sidebar-dark-color: #191D2B;
+        --sidebar-dark-color: #3c3c3c;
         --background-light-color-2: rgba(3,127,255,.3);
     }
 

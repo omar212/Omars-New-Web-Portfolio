@@ -32,9 +32,9 @@ function ImageSection() {
                     </div> 
                     <div className="info">
                         <p>Omar Elnagdy</p>
-                        <p>24</p>
+                        <p>25</p>
                         <p>Egyptian/Moroccan</p>
-                        <p>English, Arabic, Spanish</p> 
+                        <p>English, Arabic</p> 
                         <p>New York, USA</p>
                         <p>IBM</p>
                         <p>Software Engineer</p>  

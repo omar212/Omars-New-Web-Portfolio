@@ -54,6 +54,7 @@ const NavigationStyled = styled.nav `
     .nav-items {
         width: 100%;
         height: 100%;
+        margin-top: 2rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

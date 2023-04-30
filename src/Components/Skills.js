@@ -12,19 +12,19 @@ function Skills() {
                 <InnerLayout>
                     <div className="skills">
                         <ProgressBar 
+                            title={'Javascript / ReactJS / Redux / NodeJS / NextJS'}
+                            width={'95%'}
+                            text={'95%'}
+                        />
+                        <ProgressBar 
+                            title={'Java / SpringBoot'}
+                            width={'80%'}
+                            text={'80%'}
+                        />
+                        <ProgressBar 
                             title={'HTML5'}
-                            width={'90%'}
-                            text={'90%'}
-                        />
-                        <ProgressBar 
-                            title={'Javascript/React JS'}
-                            width={'90%'}
-                            text={'90%'}
-                        />
-                        <ProgressBar 
-                            title={'Java'}
-                            width={'70%'}
-                            text={'70%'}
+                            width={'100%'}
+                            text={'100%'}
                         />
                         <ProgressBar 
                             title={'Python'}
@@ -32,7 +32,7 @@ function Skills() {
                             text={'80%'}
                         />
                         <ProgressBar 
-                            title={'SQL'}
+                            title={'MySQL'}
                             width={'80%'}
                             text={'80%'}
                         />
@@ -41,8 +41,23 @@ function Skills() {
                             width={'40%'}
                             text={'40%'}
                         />
-                         <ProgressBar 
-                            title={'CSS/SASS'}
+                        <ProgressBar 
+                            title={'CSS / SASS / Bootstrap / Material UI / Carbon Design'}
+                            width={'100%'}
+                            text={'100%'}
+                        />
+                        <ProgressBar
+                            title={'React Testing Library / Jest'}
+                            width={'80%'}
+                            text={'80%'}
+                        />
+                        <ProgressBar
+                            title={'Git / Github / Gitlab'}
+                            width={'100%'}
+                            text={'100%'}
+                        />
+                        <ProgressBar
+                            title={'Docker / Kubernetes'}
                             width={'80%'}
                             text={'80%'}
                         />
