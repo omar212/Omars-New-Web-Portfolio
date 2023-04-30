@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import omarResume from '../images/resume/resume.pdf'
+import omarResume from '../images/resume/Omar_Elnagdy_Resume.pdf'
 import { Link } from 'react-router-dom'
 
 function PrimaryButton({title}) {
