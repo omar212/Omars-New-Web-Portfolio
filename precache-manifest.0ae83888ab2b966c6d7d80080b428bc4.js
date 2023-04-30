@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "5edb942ddea068696fc3",
+    "revision": "aeb833723210cf065366",
     "url": "/static/css/main.d915cd2f.chunk.css"
   },
   {
-    "revision": "5edb942ddea068696fc3",
-    "url": "/static/js/main.9fa9c2e3.chunk.js"
+    "revision": "aeb833723210cf065366",
+    "url": "/static/js/main.bd9ef4b0.chunk.js"
   },
   {
     "revision": "7b0109f74761f832e725",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/static/media/menaApp.9ffaa334.png"
   },
   {
-    "revision": "d44b8a9ee1a91dc87b8d9f84d96c36f9",
+    "revision": "6f02783520577d07799b85f9ea8ef944",
     "url": "/index.html"
   }
 ];
