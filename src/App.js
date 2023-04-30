@@ -116,7 +116,7 @@ function App() {
     <div className="App">
       <Sidebar setNavToggle={setNavToggle} navToggle={navToggle}/>
       
-      <MainContentStyled>
+      <MainContentStyled style={{marginLeft: !navToggle ? '16.3rem' : '0'}}>
         <div className="lines">
           <div className="line-1"></div>
           <div className="line-2"></div>
@@ -178,11 +178,10 @@ function App() {
 
 const MainContentStyled = styled.main`
   position: relative;
-  margin-left: 16.3rem;
   min-height: 100%;
 
   @media screen and (max-width:1200px) {
-    margin-left: 0;
+    margin-left: 0 !important;
   }
 
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -209,7 +208,6 @@ const MainContentStyled = styled.main`
       .line-1, .line-2, .line-3, .line-4 {
         width: 1px;
         min-height: 100%;
-        background-color:var(--border-color);
       }
     }
 `;

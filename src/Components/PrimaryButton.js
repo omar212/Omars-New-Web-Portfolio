@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom'
 function PrimaryButton({title}) {
     return (
         <PrimaryButtonStyled>
-            <Link to={omarResume} target="_blank" download>
+            <a href={omarResume} target="_blank" download="Omar_Elnagdy_Resume.pdf">
                 {title}
-            </Link>
+            </a>
         </PrimaryButtonStyled>
     )
 }

@@ -95,9 +95,9 @@ function ContactPage() {
                     </div>
                     
                     <div className="right-content">
-                        <ContactItem title={'Phone'} icon={phone} cont1={'+1(347)-429-2283'} const2={''} />
+                        <ContactItem title={'Phone'} icon={phone} cont1={'+1 (347) - 429 - 2283'} const2={''} />
                         <ContactItem title={'Email'} icon={email} cont1={'omarelnagdy16@gmail.com'} const={''} />
-                        <ContactItem title={'Location'} icon={location} cont1={'New York, NY'} cont2={'Danbury, CT'} />
+                        <ContactItem title={'Location'} icon={location} cont1={'New York, NY'} cont2={''} />
                     </div>
 
                 </InnerLayout>

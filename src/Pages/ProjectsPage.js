@@ -30,7 +30,7 @@ function BlogsPage() {
                                     />
                                     <CardContent>
                                     <Typography gutterBottom variant="h5" component="div">
-                                        <a href={blog.link}>{blog.title}</a>
+                                        <a href={blog.link} target="_blank">{blog.title}</a>
                                     </Typography>
                                     </CardContent>
                                 </Card>

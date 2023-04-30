@@ -1,15 +1,10 @@
 import React from 'react';
 import  { NavLink } from 'react-router-dom';
-import avatar from '../images/avatar.jpg';
 import styled from 'styled-components';
 
 function Navigation({setNavToggle, navToggle}) {
     return (
         <NavigationStyled>
-            <div className="avatar">
-                <img src={avatar} alt="" />
-            </div>
-            
             <ul className="nav-items">
                 <ol className="nav-items">
                     <NavLink to="/" activeClassName="active-class" onClick={() => setNavToggle(!navToggle)} exact>
@@ -52,22 +47,16 @@ const NavigationStyled = styled.nav `
     align-items: center;
     height: 100%;
     width: 100%;
-    border-right: 5px solid var(--border-color);
+    /* border-right: 5px solid var(--border-color); */
 
-    .avatar {
-        width: 80%;
-        border-bottom: 1px solid var(--border-color);
-        text-align: center;
-        padding: 1rem 0;
-        img {
-            width: 100%;
-            border-radius: 2rem;
-            border: 3px solid var(--border-color);
-        }
-    }
+    
 
     .nav-items {
         width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         text-align: center;
         font-size: 2rem;
         .active-class {
