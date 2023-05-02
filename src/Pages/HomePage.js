@@ -5,7 +5,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import GithubIcon from '@material-ui/icons/GitHub';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedIn from '@material-ui/icons/LinkedIn';
-import avatar from '../images/avatar.jpg';
+import avatar from '../images/avatar2.jpg';
 
 
 function HomePage() {
@@ -67,6 +67,7 @@ const HomePageStyled = styled.header`
             }
             
             border-radius: 2rem;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             border: 3px solid var(--border-color);
         }
     }
