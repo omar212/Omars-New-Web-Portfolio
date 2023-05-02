@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "aeb833723210cf065366",
+    "revision": "9b02db9b4257fba467b9",
     "url": "/static/css/main.d915cd2f.chunk.css"
   },
   {
-    "revision": "aeb833723210cf065366",
-    "url": "/static/js/main.bd9ef4b0.chunk.js"
+    "revision": "9b02db9b4257fba467b9",
+    "url": "/static/js/main.fdb1d8f4.chunk.js"
   },
   {
     "revision": "7b0109f74761f832e725",
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/static/js/3.06f70b6e.chunk.js"
   },
   {
-    "revision": "5323c60625808777afbeda5d3a943832",
-    "url": "/static/media/avatar.5323c606.jpg"
+    "revision": "20d69c0d7f5d3e372507bb3f820adf5a",
+    "url": "/static/media/avatar2.20d69c0d.jpg"
   },
   {
     "revision": "14dbe5a4d5669db0c78bcbccfe3a3bfe",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/static/media/menaApp.9ffaa334.png"
   },
   {
-    "revision": "6f02783520577d07799b85f9ea8ef944",
+    "revision": "739e3939c799dfd5238e4529d7c385dc",
     "url": "/index.html"
   }
 ];
