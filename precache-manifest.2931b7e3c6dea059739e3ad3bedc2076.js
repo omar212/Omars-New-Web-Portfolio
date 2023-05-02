@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/static/media/menaApp.9ffaa334.png"
   },
   {
-    "revision": "70018f71346cffe649da67e8e541abe6",
+    "revision": "18850d89cce0505603c31c7317a26ef3",
     "url": "/index.html"
   }
 ];
