@@ -85,7 +85,7 @@ const ImageSectionStyled = styled.div`
         }
         .about-info{
             display: flex;
-            height: 35vh;
+            height: 100%;
             width: 100%;
             @media screen and (max-width: 1000px) {
                 justify-content: center;
@@ -109,12 +109,9 @@ const ImageSectionStyled = styled.div`
             color: var(--white-color);
             font-weight: 800;
         }
-        /* .hckQw {
-            margin-top: 20%;
-        } */
-
+        
         .btn-container {
-            margin-top: 25%;
+            margin-top: 2rem;
         }
     }
 `

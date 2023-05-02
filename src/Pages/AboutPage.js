@@ -38,6 +38,8 @@ const AboutStyled = styled.section`
         display: block;
         width: 100%;
         height: 70px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
     @keyframes bounce {
