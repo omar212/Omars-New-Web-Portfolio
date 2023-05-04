@@ -37,11 +37,5 @@ const PrimaryButtonStyled = styled.a`
     a {
         font-size: 30px;
     }
-    /* &:hover::after {
-        width: 100%;
-        background-color: white;
-        opacity: .7;
-        bord
-    } */
 `
 export default PrimaryButton
