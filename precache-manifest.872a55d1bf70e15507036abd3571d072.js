@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "dc2bb06b953efd501f0f",
+    "revision": "f25a01b9df6bbbda6c9c",
     "url": "/static/css/main.d915cd2f.chunk.css"
   },
   {
-    "revision": "dc2bb06b953efd501f0f",
-    "url": "/static/js/main.2f82384f.chunk.js"
+    "revision": "f25a01b9df6bbbda6c9c",
+    "url": "/static/js/main.8e4752e9.chunk.js"
   },
   {
-    "revision": "7b0109f74761f832e725",
-    "url": "/static/js/runtime~main.2846de67.js"
+    "revision": "7bce4dc57943f051a79a",
+    "url": "/static/js/runtime~main.b0aa1981.js"
   },
   {
-    "revision": "1eb8734d4e35da3fef34",
-    "url": "/static/js/2.0f4b0dae.chunk.js"
+    "revision": "93a927fb43266f507c61",
+    "url": "/static/js/2.c517a8c6.chunk.js"
   },
   {
-    "revision": "d135e508dfd0e505fff4",
-    "url": "/static/js/3.06f70b6e.chunk.js"
+    "revision": "fee91e16debbc2f68767",
+    "url": "/static/js/3.4d801c37.chunk.js"
   },
   {
     "revision": "20d69c0d7f5d3e372507bb3f820adf5a",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/static/media/ai.14dbe5a4.jpg"
   },
   {
-    "revision": "b29a4e5cf29b030d569237d2ce66091e",
-    "url": "/static/media/Omar_Elnagdy_Resume.b29a4e5c.pdf"
+    "revision": "17ebd14fa5d7f66207b4eccba5eabf81",
+    "url": "/static/media/Omar_Elnagdy_Resume.17ebd14f.pdf"
   },
   {
     "revision": "309fa45c8dd14ce61d4b40f262912e0c",
@@ -64,15 +64,11 @@ self.__precacheManifest = [
     "url": "/static/media/github.e7d173cb.png"
   },
   {
-    "revision": "70bb883c123ca18ff5a0e3240120f592",
-    "url": "/static/media/iAm.70bb883c.png"
+    "revision": "04511a149554896a38f5da9ea48db1fe",
+    "url": "/static/media/chatGPT.04511a14.png"
   },
   {
-    "revision": "9ffaa3348162f9cfc0d781ad4df11a56",
-    "url": "/static/media/menaApp.9ffaa334.png"
-  },
-  {
-    "revision": "a512a42acb3e08d3f03b8f61e4da2f7b",
+    "revision": "68b737006dc2d5c76df38f25fc94dfce",
     "url": "/index.html"
   }
 ];
