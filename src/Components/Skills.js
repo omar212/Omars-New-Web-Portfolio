@@ -12,7 +12,7 @@ function Skills() {
                 <InnerLayout>
                     <div className="skills">
                         <ProgressBar 
-                            title={'Javascript / ReactJS / Redux / NodeJS / NextJS'}
+                            title={'Javascript / ReactJS / Typescript / Redux / NodeJS / NextJS'}
                             width={'95%'}
                             text={'95%'}
                         />
@@ -42,7 +42,7 @@ function Skills() {
                             text={'40%'}
                         />
                         <ProgressBar 
-                            title={'CSS / SASS / Bootstrap / Material UI / Carbon Design'}
+                            title={'CSS / SASS / Bootstrap / Material UI / Carbon Design / Tailwind'}
                             width={'100%'}
                             text={'100%'}
                         />
